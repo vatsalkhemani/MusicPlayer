@@ -1,6 +1,7 @@
 package com.example.vatsal.audioapp.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -11,6 +12,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.vatsal.audioapp.Adapters.Model.HorizontalModel;
+import com.example.vatsal.audioapp.MainActivity;
+import com.example.vatsal.audioapp.MusicActivity;
 import com.example.vatsal.audioapp.R;
 
 import java.util.ArrayList;
@@ -19,8 +22,13 @@ import java.util.ArrayList;
  * Created by Vatsal on 09-06-2020.
  */
 
+
+
+
 public class HorizontalRecycleViewAdapter extends RecyclerView.Adapter<HorizontalRecycleViewAdapter.HorizontalRVViewHolder>
 {
+
+
 
     Context context;
     ArrayList<HorizontalModel> arrayList;
@@ -44,7 +52,10 @@ public class HorizontalRecycleViewAdapter extends RecyclerView.Adapter<Horizonta
         horizontalRVViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context,horizontalModel.getName(),Toast.LENGTH_SHORT).show();
+               //Toast.makeText(context,horizontalModel.getName(),Toast.LENGTH_SHORT).show();
+
+                Intent intent=new Intent(context,MusicActivity.class);
+                context.startActivity(intent);
             }
         });
     }
