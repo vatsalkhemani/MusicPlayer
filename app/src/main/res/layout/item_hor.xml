@@ -26,13 +26,13 @@
             />
 
         <TextView
+            android:id="@+id/textTitleHorizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="5dp"
-            android:text="      Beatles"
-            android:textColor="@android:color/background_light"
-            android:id="@+id/textTitleHorizontal"/>
+            android:text="Dance Monkey"
+            android:textColor="@android:color/black" />
 
 
     </LinearLayout>

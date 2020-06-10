@@ -34,16 +34,16 @@ public class MainActivity extends AppCompatActivity {
 
     private void setData() {
 
-        for(int i=1;i<=5;i++)
+        for(int i=1;i<=8;i++)
         {
             VerticalModel verticalModel=new VerticalModel();
-            verticalModel.setTitle("Title"+i);
+            verticalModel.setTitle("Collection "+i);
             ArrayList<HorizontalModel> arraylist=new ArrayList<>();
 
-            for(int j=0;j<=5;j++){
+            for(int j=0;j<=8;j++){
                 HorizontalModel horizontalModel=new HorizontalModel();
                 horizontalModel.setDescription("Description"+ j);
-                horizontalModel.setName("Name"+j);
+                horizontalModel.setName("Song "+j);
                 arraylist.add(horizontalModel);
             }
             verticalModel.setArrayList(arraylist);
